@@ -1,3 +1,5 @@
+package Day_2;
+
 public class prog_2_1 {
     public static void main(String[] args){
         if (args.length != 10){

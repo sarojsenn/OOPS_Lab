@@ -1,3 +1,5 @@
+package Day_2;
+
 import java.util.Scanner;
 class Details{
     String name;
@@ -18,7 +20,7 @@ class Details{
 public class prog_2_5 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of students: ");
+        System.out.println("Enter Day_2.number of students: ");
         int n = sc.nextInt();
         Details[] stu = new Details[n];
         for (int i = 0; i< n; i++) {

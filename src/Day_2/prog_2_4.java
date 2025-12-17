@@ -1,23 +1,29 @@
+package Day_2;
+
 import java.util.Scanner;
 class Rectangle_1{
     int length;
     int breadth;
+    Rectangle_1() {
+        length = 0;
+        breadth = 0;
+    }
     void read(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter length of the rectangle: ");
         length = sc.nextInt();
-        System.out.println("Enter breadth of the reactangle: ");
+        System.out.println("Enter breadth of the rectangle: ");
         breadth = sc.nextInt();
     }
-    void calculate(){
-        double area = length*breadth;
-        int perimeter = 2*(length+breadth);
-        System.out.println("Area of the rectangle is: " + area);
-        System.out.println("Perimeter of the rectangle is: "+ perimeter);
+    double area(){
+         return length*breadth;
+    }
+    int perimeter(){
+        return 2*(length+breadth);
     }
     void display(){
-        System.out.println("Length of the rectangle is: " + length);
-        System.out.println("Breadth of the rectangle is: "+ breadth);
+        System.out.println("Area of Rectangle is : " + area());
+        System.out.println("Perimeter of Rectangle is : " + perimeter());
 
     }
 }
@@ -25,7 +31,6 @@ public class prog_2_4 {
     public static void main(String[] args){
         Rectangle_1 myrect = new Rectangle_1();
         myrect.read();
-        myrect.calculate();
         myrect.display();
     }
 }
